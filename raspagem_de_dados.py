@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 
 
 url = "https://www.climatempo.com.br/previsao-do-tempo/cidade/593/palmas-to"
+url2 = "https://www.climatempo.com.br/previsao-do-tempo/cidade/1036/balsas-ma"
 def temperatura(url):
     html = requests.get(url).content
     soup = BeautifulSoup(html,"html.parser")
@@ -11,5 +12,11 @@ def temperatura(url):
     return temperaturaMaxima.text, temperaturaMinima.text
 
 # Mostra resultados #
-print(' Temperatura Mínima: ', temperatura(url)[1])
-print(' Temperatura Mínima: ', temperatura(url)[0])
+print('Palmas-to')
+print('Temperatura Mínima: ', temperatura(url)[1])
+print('Temperatura Mínima: ', temperatura(url)[0],'\n\n')
+
+print('Balsas')
+print('Temperatura Mínima: ', temperatura(url2)[1])
+print('Temperatura Mínima: ', temperatura(url2)[0])
+
