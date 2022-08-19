@@ -12,11 +12,11 @@ def temperatura(url):
     return temperaturaMaxima.text, temperaturaMinima.text
 
 # Mostra resultados #
-print('Palmas-to')
+print('Palmas-TO')
 print('Temperatura Mínima: ', temperatura(url)[1])
 print('Temperatura Mínima: ', temperatura(url)[0],'\n\n')
 
-print('Balsas')
+print('Balsas-MA')
 print('Temperatura Mínima: ', temperatura(url2)[1])
 print('Temperatura Mínima: ', temperatura(url2)[0])
 
